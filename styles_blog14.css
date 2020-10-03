@@ -1,0 +1,48 @@
+body {
+    background-color: darkgrey;
+}
+
+.cim {
+    padding: 10px;
+}
+
+.div_blogresz {
+    margin: auto 10%;
+    /*margin-top: 30px;*/
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px gray;
+    padding: 20px;
+}
+
+.blogresz {
+    margin-top: 10%;
+}
+
+.lapozo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lapoz {
+    width: 120px;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px gray;
+}
+
+.lapoz a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+.lapoz:hover {
+    /* background-color: lightgray;*/
+    transform: scale(1.1, 1.1);
+}
+
+/*a:hover{color: darkgrey;}*/
+
+/*.teszt{height: 20%;}*/

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="azthor" content="X.Y - Gyalogh Bernadett">
+    <meta name="description" content="Nagy Márton koncertfotós 2015 óta a magyar könnyűzenei élet nélkülözhetetlen alakja. Képei által őrzi meg a koncertek magukkal ragadó egyedi hangulatát és legszebb pillanatait.">
+    <!--google-ben leírás a cím alatt, keresőoptimalizálás, egyedi kell legyen oldalanként-->
+    <meta name="keywords" content="fotó, koncert, zene, fesztivál, kiállítás,  díj, budapestpark, barbanegra,kobuci, A38, Orfű,Szigetfesztivál, vadfruttik, brains, HS7, Szabó Balázs bandája, buli, party">
+    <!--kicsit elavult, google nem annyira használja, mások inkább-->
+    <title>Marton Nagy Photos| Vizsgamunka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img_logo/favicon.ico" type="image/gif" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        
+          /*sticky kezdődik*/
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .sticky+.main_content {
+            padding-top: 120px;
+        }
+        /*sticky vége*/
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .content_gallery {
+            display: block;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*margin-bottom: 10px;
+        margin-top: 10px; */
+            margin: 10px;
+
+            justify-content: space-around;
+            /* align-items: center;*/
+            /*  align-content: space-between;*/
+        }
+
+        .column {
+            flex: 33%;
+            max-width: 33%;
+            padding: 5px 5px;
+        }
+
+        .column img {
+            margin: 10px;
+            vertical-align: middle;
+            width: 100%
+        }
+
+        @media (max-width:768) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width:560) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        /*transation*/
+
+        img {
+            /* width: 150px;
+            height: 150px;
+        background-color: aqua;
+            border: 1px solid black;
+            padding: 5px;*/
+            transition: 1.5s;
+            /*ennyi idő alatt csinálja meg*/
+
+        }
+
+        img:hover {
+
+            transform: scale(1.1, 1.1);
+            */ object-fit: cover;
+            filter: brightness(1.3);
+
+
+            /*border: 3px solid black;*/
+        }
+
+        /*transation vége*/
+        .column {
+            overflow: hidden;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="content">
+        <header class="head2" id="myTopnav">
+            <nav>
+                <div class="logo"><a href="index.html" class="index_a egyeb_a">
+                        <img class="img_foto" src="imgkor/kor4.png" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="index_a egyeb_a">Főoldal</a></li>
+                    <li><a href="me.html">Rólam</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn">Galéria</a>
+                        <ul class="dropdown-content">
+                            <li><a href="koncert.html">Koncertfotók</a></li>
+                            <li><a href="koncert2.html">Minden más</a></li>
+                            <li><a href="error.html">Portréfotók</a></li>
+                            <li><a href="slide.html">Kedvencek</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="connect.html">Kapcsolat</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <a href="javascript:void(0);" onclick="toggleHamburgerMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="icon_insta">
+                <a href="https://www.instagram.com/martonnphoto/" target="_blank">
+                    <i class="fa fa-instagram" style="font-size:18px"></i>
+                </a>
+            </div>
+
+            <div class="icon_face">
+                <a href="https://www.facebook.com/martonnphoto" target="_blank">
+                    <i class="fa fa-facebook-f" style="font-size:18px"></i>
+                </a>
+            </div>
+        </header>
+
+        <main class="main_content">
+
+            <h1>GALÉRIA</h1>
+
+            <h3 class="idez">"Kezdejetk el élni..."</h3>
+            <br>
+            <div class="row">
+                <div class="column">
+                    <img src="img2/02.jpg" alt="">
+                    <img src="img2/03.jpg" alt="">
+                    <img src="img2/01.jpg" alt="">
+                    <img src="img2/04.jpg" alt="">
+                    <img src="img2/05.jpg" alt="">
+                    <img src="img2/06.jpg" alt="">
+                    <img src="img2/07.jpg" alt="">
+
+                </div>
+                <div class="column">
+                    <div style="height: 40px;"></div>
+                    <img src="img2/08.jpg" alt="">
+                    <img src="img2/12.jpg" alt="">
+                    <img src="img2/09.jpg" alt="">
+                    <img src="img2/10.jpg" alt="">
+                    <img src="img2/11.jpg" alt="">
+                    <img src="img2/12.jpg" alt="">
+                    <img src="img2/13.jpg" alt="">
+            
+                </div>
+                <div class="column">
+                    <img src="img2/14.jpg" alt="">
+                    <img src="img2/15.jpg" alt="">
+                    <img src="img2/16.jpg" alt="">
+                    <img src="img2/17.jpg" alt="">
+                    <img src="img2/18.jpg" alt="">
+                    <img src="img2/19.jpg" alt="">
+                    <img src="img2/20.jpg" alt="">
+
+
+
+
+                </div>
+
+            </div>
+            <footer class="lab2">
+                <div style="text-align: center;">
+                    <h1 class="animate__animated animate__backInDown">Nagy Márton Photos</h1>
+                    <h3 style="color: white">martonnphoto@gmail.com</h3>
+                </div>
+
+            </footer>
+        </main>
+    </div>
+    <script src="script_hambi.js"></script>
+    <script src="sticky.js"></script>
+</body></html>

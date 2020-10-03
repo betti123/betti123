@@ -1,0 +1,416 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.all {
+    display: block;
+    height: auto;
+}
+
+
+/***********hambi menü*******/
+nav {
+    width: 100%;
+}
+
+.icon {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+
+.icon a {
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav > ul > li:not(:first-child) {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    nav > ul {
+        width: 100%;
+        padding-inline-start: 0px;
+    }
+
+    nav {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    header.responsive nav > ul > li {
+        display: block;
+        padding: 10px;
+        background-color: black;
+
+    }
+
+    header.responsive nav > ul {
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+
+    header.responsive nav {
+        margin-left: 0;
+        margin-right: 0;
+        background-color: black;
+    }
+
+    header.responsive {
+        position: relative;
+        opacity: 0.9;
+        background-color: black;
+    }
+
+    /*blogból kivenni az asideot*/
+    aside {
+        display: none;
+    }
+
+    .ossz,
+    .jobb,
+    .bal {
+        display: block;
+    }
+
+    .jobb,
+    .bal {
+        width: 500px;
+    }
+
+
+
+    .logo {
+        display: none;
+    }
+
+    .dropdown-content {
+        left: 100px;
+        top: 0px;
+    }
+}
+
+
+/**hambi vege**/
+
+.content {
+    width: 100%;
+    min-height: 97vh;
+
+    display: block;
+    justify-content: center;
+}
+
+#content {
+    /*background-color: aqua;*/
+    background-image: url(img1/01_19144120_10213315404066043_6912839234613170807_o.jpg);
+    background-size: cover;
+    /*Ez kellllllll!!!!*/
+
+    animation-name: animacio;
+    /*meghívatkozzuk*/
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    /*végtelenségig ismétli*/
+}
+
+img {
+    object-fit: cover;
+}
+
+
+.logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    background-color: dimgray;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    /*background-size: cover;*/
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.img_foto {
+    width: 155%;
+}
+
+/*.img_foto {width: 100%;}*/
+
+i {
+    color: white;
+    font-size: 120%
+}
+
+.icon_insta {
+    position: absolute;
+    right: 30px;
+    top: 80px;
+}
+
+.icon_face {
+    position: absolute;
+    right: 70px;
+    top: 80px;
+
+}
+
+
+
+/*BLOG és többi, ami nem főoldal*/
+.lab2 {
+    background-color: black;
+    opacity: 0.8;
+    padding: 20px;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+.head2 {
+    background-color: black;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+}
+
+.index_head {
+    background-color: grey;
+    opacity: 0.8;
+    position: relative;
+}
+
+/*.index_lab {background-color: black;
+ opacity: 0.8;}*/
+
+header,
+footer {
+    margin-left: auto 5%;
+    margin-right: auto 5%;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 2px gray;
+}
+
+
+
+footer h1,
+footer h3 {
+    color: white;
+    margin: 5px;
+}
+
+nav {
+    margin: auto 10%;
+    display: flex;
+    justify-content: center;
+    /*background-color: brown;*/
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+ul {
+    width: 600px;
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul li {
+    color: white;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 120%
+}
+
+li a:hover {
+    background-color: #362322;
+}
+
+#gallery {
+    display: none;
+}
+
+/*******************************************************/
+.dropbtn {
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #black;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #362322;
+}
+
+
+/*hover dropdown*/
+
+/*#gallery li a:hover {
+    display: block;
+}*/
+
+main {}
+
+h1 {
+    color: black;
+    text-shadow: 1px 1px grey;
+}
+
+.main_h1 {
+    color: white;
+    padding: 5px;
+}
+
+
+.idezetek {
+    display: block;
+    flex-direction: row;
+
+}
+
+.idez {
+    margin: auto 20%;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    font-weight: 800px;
+}
+
+
+.szerzo {
+    text-align: end;
+}
+
+.hello {
+    padding: 20px;
+}
+
+
+/*blog resz*/
+
+
+.ossz {
+    width: 100%;
+    display: flex;
+    /*background-color:lightgrey;*/
+    /*background-color:#d4c8db;*/
+    /*background-color: pink;*/
+}
+
+/*.bal{width:40%;
+padding: 10px;
+
+}*/
+
+.jobb,
+.bal {
+    width: 40%;
+    padding: 10px;
+    /*box-shadow: 0px 0px 3px 2px gray;*/
+    background-color: white;
+}
+
+aside {
+    width: 30% display:flex;
+    overflow: hidden;
+    margin: 5px;
+
+    /*background-color: aqua;*/
+}
+
+#zero_article {
+    height: 100px;
+}
+
+.cikk {
+    /*border: 1px solid grey;*/
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px gray;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /*height: 49%;*/
+}
+
+/*
+.cikk1{border-top-left-radius: 30px;}
+.cikk2{border-bottom-left-radius: 30px;}
+.cikk3{border-top-right-radius: 30px;}
+.cikk4{border-bottom-right-radius: 30px;}
+*/
+
+.blog_h2 {
+    text-align: center;
+}
+
+.blog_kep {
+    /*box-sizing: border-box;*/
+    /*height: 300px;
+    width: 450px;*/
+    width: 98%;
+
+    object-fit: cover;
+    margin: 0 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.blog_p {
+    text-align: justify;
+}
